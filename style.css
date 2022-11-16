@@ -100,6 +100,7 @@ input[type="submit"]:hover{
         background-color: hsl(257, 40%, 49%) ;
         padding: 3%;
         justify-content: unset;
+        height:unset;
     }
 
     .container{
