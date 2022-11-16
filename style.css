@@ -1,0 +1,137 @@
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.desktop-bg{
+    position: absolute;
+    background-color: hsl(257, 40%, 49%);
+    width: 100%;
+}
+
+.desktop-bg img {
+    width: 100%;
+}
+
+nav{
+    position: relative; 
+    display: flex; 
+    justify-content: center; 
+    width: 25%;
+}
+
+nav>img{
+    width: 70%;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    height: 100vh;
+    color: hsl(0, 100%, 100%);
+    font-weight: 400;
+    line-height: 1.5;
+    font-family: "Open Sans";
+    align-items:center;
+    justify-content: center;
+    gap: 3%;
+}
+
+.illustration-mockup, .huddle-desc{
+    width: 45%;
+}
+
+.illustration-mockup img{
+    width: 100%;
+}
+
+h1{
+    font-weight: 700;
+    font-family: Poppins;
+    font-size: 2rem;
+    width: 60%;
+}
+
+.huddle-desc{
+    padding: 4% 0;
+}
+
+.huddle-desc>p{
+    width: 70%;
+    padding: 3% 0;
+}
+
+input[type="submit"]{
+    background-color: hsl(0, 100%, 100%);
+    color: hsl(257, 40%, 49%);
+    padding: 2% 9%;
+    border: none;
+    border-radius: 25px;
+    font-family: "Poppins";
+    font-weight: 400;
+}
+
+input[type="submit"]:hover{
+    color: white;
+    background-color: hsl(300, 69%, 71%);
+    cursor: pointer;
+}
+
+.social-media{
+    text-align:right;
+    margin-top: 10%;
+}
+
+.fa-brands{
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 2%;
+    margin-right: 2%;
+}
+
+.fa-brands:hover{
+    border:1px solid hsl(300, 69%, 71%);
+    color: hsl(300, 69%, 71%);
+    cursor: pointer;
+}
+
+@media (max-width:425px){
+    .container{
+        flex-direction: column;
+        padding: 5%;
+    }
+    
+    .desktop-bg{
+        height: 100vh;
+    }
+
+    .illustration-mockup, .huddle-desc{
+        width: 100%;
+    
+    }
+
+    .huddle-desc, .social-media{
+        text-align: center;
+    }
+
+    .huddle-desc>p, h1{
+        width: 100%;
+    }
+
+    nav{
+        justify-content: center; 
+        width: 35%; 
+    }
+
+    nav>img{
+    width: 100%;
+    }
+}
+
+
+
+
+
+
+
