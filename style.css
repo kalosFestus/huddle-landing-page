@@ -4,30 +4,9 @@
     box-sizing: border-box;
 }
 
-.desktop-bg{
-    position: absolute;
-    background-color: hsl(257, 40%, 49%);
-    width: 100%;
-}
-
-.desktop-bg img {
-    width: 100%;
-}
-
-nav{
-    position: relative; 
-    display: flex; 
-    justify-content: center; 
-    width: 25%;
-}
-
-nav>img{
-    width: 70%;
-}
-
-.container{
-    position: relative;
+main{
     display: flex;
+    flex-direction: column;
     height: 100vh;
     color: hsl(0, 100%, 100%);
     font-weight: 400;
@@ -35,15 +14,33 @@ nav>img{
     font-family: "Open Sans";
     align-items:center;
     justify-content: center;
-    gap: 3%;
+    background: url("./images/bg-desktop.svg") no-repeat;
+    background-size: cover;
+    background-color: hsl(257, 40%, 49%) ;
+}
+
+nav{
+    width: 50%;
+    height: 15vh;
+    align-self: flex-start;
+    padding-left: 2%;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 5%;
 }
 
 .illustration-mockup, .huddle-desc{
-    width: 45%;
+    width: 44%;
 }
 
 .illustration-mockup img{
     width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 h1{
@@ -97,9 +94,15 @@ input[type="submit"]:hover{
 }
 
 @media (max-width:425px){
+    main{
+        background: url("./images/bg-mobile.svg") no-repeat;
+        background-size: contain;
+        background-color: hsl(257, 40%, 49%) ;
+        padding: 5%;
+    }
+
     .container{
         flex-direction: column;
-        padding: 5%;
     }
     
     .desktop-bg{
@@ -119,13 +122,8 @@ input[type="submit"]:hover{
         width: 100%;
     }
 
-    nav{
-        justify-content: center; 
-        width: 35%; 
-    }
-
     nav>img{
-    width: 100%;
+        width: 100%; 
     }
 }
 
